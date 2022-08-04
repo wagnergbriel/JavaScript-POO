@@ -1,5 +1,6 @@
 export class Conta {
   constructor(saldo, agencia, cliente) {
+    if (this.constructor == Conta) throw new Error("Não pode instaciar está classe");
     this._saldo = saldo;
     this._cliente = cliente;
     this.agencia = agencia;
